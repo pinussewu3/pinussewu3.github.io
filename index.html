@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustbeus Ltd | Global E-commerce & Retail Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #fcfcfc; }
+        .font-display { font-family: 'Unbounded', sans-serif; }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-rose {
+            background-color: #fb2851;
+            transition: all 0.3s ease;
+        }
+        .btn-rose:hover {
+            background-color: #e11d48;
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(251, 40, 81, 0.3);
+        }
+
+        .card-retail:hover {
+            border-color: #fb2851;
+            background: #fff;
+        }
+    </style>
+</head>
+<body class="text-slate-900">
+
+    <nav class="fixed w-full z-50 glass-nav border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-slate-900 rounded-2xl flex items-center justify-center">
+                    <span class="text-white font-display text-lg">M</span>
+                </div>
+                <div class="leading-none">
+                    <span class="text-xl font-display font-bold tracking-tighter text-slate-900 block uppercase">MUSTBEUS</span>
+                    <span class="text-[9px] uppercase tracking-[0.4em] font-bold text-rose-500">Retail Limited</span>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-10 text-[10px] font-bold uppercase tracking-widest text-slate-500">
+                <a href="#home" class="hover:text-rose-500 transition">Shop</a>
+                <a href="#about" class="hover:text-rose-500 transition">Our Story</a>
+                <a href="#contact" class="hover:text-rose-500 transition">Contact</a>
+            </div>
+            <a href="#contact" class="btn-rose text-white px-6 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest">
+                Partner Us
+            </a>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-gradient min-h-screen flex items-center pt-20 px-6 relative overflow-hidden text-center md:text-left">
+        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
+            <div class="text-white relative z-10">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-rose-500/10 border border-rose-500/20 text-rose-400 text-xs font-bold mb-8 tracking-widest uppercase">
+                    Silvertown Way • London E16
+                </div>
+                <h1 class="text-5xl md:text-7xl font-display font-black mb-8 leading-tight tracking-tighter uppercase">
+                    Ritel Digital <br><span class="text-rose-500 italic">Tanpa Batas.</span>
+                </h1>
+                <p class="text-lg text-slate-400 mb-10 leading-relaxed max-w-xl font-light">
+                    Mustbeus Ltd menghadirkan kurasi produk terbaik langsung ke depan pintu Anda melalui ekosistem e-commerce yang cerdas dan efisien.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#contact" class="btn-rose text-white px-10 py-4 rounded-full font-bold uppercase text-xs tracking-widest">
+                        Browse Collection
+                    </a>
+                    <a href="#about" class="bg-white/5 border border-white/10 text-white px-10 py-4 rounded-full font-bold uppercase text-xs tracking-widest hover:bg-white hover:text-slate-900 transition-all">
+                        Pelajari Kami
+                    </a>
+                </div>
+            </div>
+            <div class="hidden lg:block relative">
+                <div class="absolute -inset-4 bg-rose-500/20 blur-3xl rounded-full"></div>
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop" alt="Retail Display" class="relative z-10 rounded-[3rem] grayscale hover:grayscale-0 transition duration-700 shadow-2xl">
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-32 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+                <div class="max-w-2xl">
+                    <h2 class="text-4xl md:text-6xl font-display font-bold text-slate-900 uppercase mb-6 tracking-tighter leading-none">Global Ritel <br>Infrastruktur</h2>
+                    <div class="w-20 h-1.5 bg-rose-500 rounded-full"></div>
+                </div>
+                <p class="text-slate-500 leading-relaxed font-light italic">"Memberikan aksesibilitas produk global dengan sentuhan personal dari pusat kota London."</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-10 bg-slate-50 border border-slate-100 rounded-3xl card-retail transition-all duration-300 group">
+                    <i class="fas fa-shopping-cart text-3xl text-rose-500 mb-8"></i>
+                    <h4 class="text-xl font-display font-bold mb-4 uppercase tracking-tighter">Direct to Consumer</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed font-light">Kami mengoptimalkan saluran ritel internet (SIC 47910) untuk memastikan efisiensi biaya dan kecepatan pengiriman.</p>
+                </div>
+                <div class="p-10 bg-slate-50 border border-slate-100 rounded-3xl card-retail transition-all duration-300 group">
+                    <i class="fas fa-search text-3xl text-rose-500 mb-8"></i>
+                    <h4 class="text-xl font-display font-bold mb-4 uppercase tracking-tighter">Curated Products</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed font-light">Setiap item yang kami pasarkan melalui Effra Gardens telah melewati seleksi kualitas yang ketat bagi pelanggan kami.</p>
+                </div>
+                <div class="p-10 bg-slate-50 border border-slate-100 rounded-3xl card-retail transition-all duration-300 group">
+                    <i class="fas fa-globe-europe text-3xl text-rose-500 mb-8"></i>
+                    <h4 class="text-xl font-display font-bold mb-4 uppercase tracking-tighter">Modern Logistics</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed font-light">Berbasis di E16 1RB, kami terhubung dengan jaringan distribusi tercepat di London untuk menjangkau pasar UK.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 bg-slate-900 text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20 relative z-10">
+            <div class="md:w-1/2">
+                <h3 class="text-4xl font-display font-bold mb-8 uppercase tracking-widest">Silvertown <br><span class="text-rose-500">Presence.</span></h3>
+                <p class="text-slate-400 mb-10 text-lg font-light leading-relaxed">Beroperasi dari **Renaissance Court, Silvertown Way**, Mustbeus Ltd memadukan gaya hidup urban London dengan inovasi perdagangan digital global.</p>
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
+                    <p class="text-[10px] font-bold text-rose-500 uppercase tracking-widest mb-4">Official Registered Office</p>
+                    <p class="text-white font-bold leading-relaxed italic">"Flat 170 Effra Gardens, 25 Silvertown Way, London, E16 1RB, United Kingdom"</p>
+                </div>
+            </div>
+            <div class="md:w-1/2 w-full">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1542382257-80dee27001db?q=80&w=2000&auto=format&fit=crop" alt="Modern London Building" class="rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition duration-1000">
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-0 right-0 p-32 opacity-10 blur-3xl bg-rose-500 rounded-full -mr-24 -mt-24"></div>
+    </section>
+
+    <footer id="contact" class="bg-white py-32 px-6 border-t border-slate-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-display font-bold text-slate-900 mb-12 uppercase tracking-tighter">Initiate Briefing</h2>
+            <p class="text-slate-500 mb-16 text-lg font-light">Untuk pertanyaan mengenai katalog produk atau kemitraan distribusi, silakan hubungi pusat administrasi kami.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 text-left mb-20">
+                <div class="bg-slate-50 p-10 rounded-3xl border border-slate-100">
+                    <p class="text-rose-500 text-[10px] uppercase tracking-widest mb-4 font-bold">Inquiry Email</p>
+                    <p class="text-slate-900 font-display font-bold text-sm tracking-widest">HELLO@MUSTBEUS.CO.UK</p>
+                </div>
+                <div class="p-10 border border-slate-100 rounded-3xl bg-slate-50">
+                    <p class="text-rose-500 text-[10px] uppercase tracking-widest mb-4 font-bold">Business Hub</p>
+                    <p class="text-slate-900 font-display font-bold text-sm tracking-widest uppercase">LONDON E16 • UNITED KINGDOM</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center pt-20 border-t border-slate-100 gap-10">
+                <div class="flex items-center gap-4">
+                    <div class="w-8 h-8 bg-slate-900 flex items-center justify-center rounded-xl">
+                        <span class="text-white text-xs font-display font-bold">M</span>
+                    </div>
+                    <span class="text-xs font-bold tracking-[0.6em] uppercase text-slate-400">Mustbeus Limited</span>
+                </div>
+                <p class="text-[9px] text-slate-400 uppercase tracking-[0.5em] font-bold">
+                    &copy; 2026 Mustbeus Ltd. Registered in England & Wales.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
